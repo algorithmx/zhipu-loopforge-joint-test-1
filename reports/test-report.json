@@ -1,0 +1,27 @@
+{
+  "repo": "zhipu-loopforge-joint-test-1",
+  "branch": "agentflow/e2e-s3-1795244370",
+  "base": "main",
+  "timestamp": "2025-11-21T07:00:00Z",
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "smoke:python-hello",
+      "command": "python3 hello.py",
+      "exit_code": 0,
+      "status": "passed",
+      "stdout": "hello from managed agent"
+    },
+    {
+      "name": "compile:py_compile-hello",
+      "command": "python3 -m py_compile hello.py",
+      "exit_code": 0,
+      "status": "passed",
+      "stdout": ""
+    }
+  ]
+}
